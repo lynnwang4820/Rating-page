@@ -1,7 +1,9 @@
 //select the button change the display
 let button = document.getElementsByClassName("btn-group");
-let selectedBtn = document.getElementsByClassName("btn-group.selected");
-let ratePtag = document.getElementById("rate-text");
+let rate = 0;
+
+
+
 
 for(let i = 0; i< button.length; i++){
     button[i].addEventListener("click",addSelected);
@@ -10,6 +12,9 @@ for(let i = 0; i< button.length; i++){
 function addSelected(){
     removeSelected();
     this.classList.add('selected');
+    rate = this.value;
+    
+    
 }
 
 function removeSelected(){
@@ -20,8 +25,7 @@ function removeSelected(){
 
 
 function submitFunc(){
-    //let rate = selectedBtn.value;
-    location.replace("submit.html");
-    ratePtag.innerHTML = "You selected x out of 5";
-    
+    sessionStorage.setItem("rate",rate);
+    window.location.replace("submit.html");
+
 }
