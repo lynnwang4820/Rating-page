@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --medium-grey:hsl(216, 12%, 54%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --medium-blue: rgba(48, 58, 70, 0.979);
+    --very-dark-blue:hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: black;
+    margin-top:15%;
+    
+}
+
+h1{
+    font-family: 'Overpass', sans-serif;
+    color:var(--white);
+    margin-top:50px;
+}
+
+p{
+    color:var(--medium-grey);
+    font-family:'Overpass', sans-serif;
+    font-size: 15px;
+    line-height:1.8;
+}
+
+.content{
+    background-color:var(--dark-blue);
+    border:1px;
+    border-radius:7%;
+    margin:auto;
+    padding:40px;
+    width:22%;
+   
+}
+.ty-content{
+    text-align:center;
+   
+}
+
+.icon{
+    border:1px;
+    background-image:linear-gradient(var(--medium-blue),var(--dark-blue));
+    border-radius: 100%;
+    display:inline;
+    padding:15px;
+    
+}
+
+.ty-icon{
+    margin:20px;
+    margin-bottom:35px;
+}
+
+.btn-group{
+    border:1px;
+    background-color:var(--medium-blue);
+    border-radius: 100%;
+    display:inline-block;
+    padding:20px;
+    font-family:'Overpass';
+    font-size:16px;
+    font-weight:bold;
+    color:var(--medium-grey);
+    margin:6px;
+    text-align: center;
+    width:51px;
+    height:51px;
+}
+
+.btn-group.selected {
+    background-color: var(--medium-grey);
+    color:var(--white);
+}
+
+.btn-group:hover{
+    background-color:var(--orange);
+    color:var(--white);
+}
+
+.submit{
+    font-family:'Overpass';
+    font-size:large;
+    color:var(--white);
+    display:block;
+    background-color: var(--orange);
+    border:none;
+    border-radius:30px;
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+    letter-spacing: 2px;;
+}
+
+.submit:hover{
+    background-color:var(--white);
+    color:var(--orange);
+}
+
+.rate{
+    background-color: var(--medium-blue);
+    border-radius: 30px;
+    width:60%;
+    margin:auto;
+    padding:5px;
+    color:var(--orange);
+}
